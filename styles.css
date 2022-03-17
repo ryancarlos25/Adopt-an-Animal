@@ -5,6 +5,10 @@
     display: none;
 }
 
+body, html {
+    background-color: purple;
+}
+
 header{
     
     display: flex;
@@ -72,7 +76,7 @@ h2 {
 h3 {
     text-align: center;
     margin-top: auto;
-    padding-top: 28px;
+    padding-top: 20px;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 5vh;
     color: #fff;
@@ -81,9 +85,7 @@ h3 {
 
 }
 
-body {
-    background-color: purple;
-}
+
 
 section {
     font-family: 'Merriweather Sans', sans-serif;
@@ -102,6 +104,7 @@ section {
     display: flex;
     height: 360px;
     width: 600px;
+    padding-bottom: 100px;
     margin: auto;
     position: relative;
     align-items: center;
@@ -135,9 +138,9 @@ section {
     border-radius: 15px;
     cursor: pointer;
     display: flex;
-    height: 10px;
+    height: 15px;
     position: relative;
-    width: 10px;
+    width: 15px;
     z-index: 10;
 }
 
@@ -166,6 +169,9 @@ section {
 
 /* Cards */
 
+main {
+    padding: 75px;
+}
 
 .cards-container {
     padding: 50px 5px;
@@ -283,3 +289,74 @@ button:hover {
 .third-button:active p {
     transform: translateY(-1px);
 }
+
+/* ESCALE ANIMATION */
+
+#escaleanimation{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#escaleanimation:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+}
+
+
+
+/* PAGE FOOTER */
+.footer{
+    border-top: 2px solid orange;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.footer span {
+    margin: 10px;
+    color: var(--white);
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sharelinks a:hover {
+    margin: 3px;
+}
+ 
+.github-img{ height: 30px;
+    width: 30px;
+    margin-right: 13px;
+
+ }
+
+ .linkedin-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 13px;
+ }
+
+ .instagram-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 13px;
+
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+ }
+ a:visited {
+     color: #000;
+ }
+ a:hover {
+     color: #000;
+ }
+ a:active {
+     color: #000;
+ }
