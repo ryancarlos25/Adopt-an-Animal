@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 header{
     
     display: flex;
-    border-radius: 15px;
     margin: auto;
     padding: 10px;
-    background-color: #A5E6BA;
+    background-color: #00a7e1;
     align-items: center;
     justify-content: space-between;
 }
@@ -39,8 +41,7 @@ h1 {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #9ac6c5;
-    border-radius: 15px;
+    background-color: orange;
     margin: auto;
     padding: 2px;
     
@@ -68,6 +69,18 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 28px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 5vh;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
 body {
     background-color: purple;
 }
@@ -76,57 +89,9 @@ section {
     font-family: 'Merriweather Sans', sans-serif;
     justify-content: space-between;
     display: flex;
+    margin: auto;
+    padding: auto;
     
-}
-
-.adopt-description { 
-    color: black;
-    align-items: center;
-    display: flex;
-    margin: 60px;
-    box-sizing: border-box;
-    flex-direction: column;
-    border-radius: 15px;
-    border: 4px solid #7785ac;
-    width: 320px;
-    height: 320px;
-    background-color: #7785ac;
-
-}
-
-.adopt-description img { 
-    width: 120px;
-    height: 120px;
-    align-items: center;
-    margin: 60px 0 10px 0;
-    
-}
-
-.adopt-description-right {
-    padding-right: 130px;
-    color: white; 
-    font-size: 16px;
-
-}
-
-.adopt-description-left {
-    padding-right: 160px;
-    color: white; 
-    font-size: 16px;
-
-}
-
-.adopt-description-middle {
-    padding-right: 90px;
-    color: white; 
-    font-size: 16px;
-
-}
-
-.adopt-description p {
-    color: white;
-    
-
 }
 
 /* Carousel */
@@ -155,6 +120,7 @@ section {
     border-radius: 15px;
     vertical-align: top;
     margin: auto;
+    border: 3px solid orange;
 }
 
 .slider input {
@@ -196,4 +162,124 @@ section {
     opacity: 1;
     visibility: visible;
     z-index: 10;
+}
+
+/* Cards */
+
+
+.cards-container {
+    padding: 50px 5px;
+    margin: auto;
+    display: flex;
+}
+
+
+.adopt-card {
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 100%;
+    background-color: orange;
+    border: 3px solid wheat;
+    margin: auto;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    
+}
+
+.adopt-card img {
+    width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 4px solid wheat;
+
+}
+
+.adopt-card-description {
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    height: 230px;
+}
+
+.adopt-card-description p {
+    text-align: start;
+    font-size: 15px;
+    
+}
+
+.adopt-card-description h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Animated Botton */
+
+button, .arrow-button, .arrow-next {
+    border: none;
+    transition: all .5s;
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px;
+    }
+
+    button p, .arrow-button img, .arrow-next img{
+    display: inline-block;
+    position: relative;
+    transition: all .5s;
+}
+
+
+.container-button p{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.bounce-effect:hover {
+    width: 189px;
+    height: 42px;
+}
+
+.bounce-effect:active {
+    width: 171px;
+    height: 38px;
+}
+
+
+.third-button {
+    background: purple;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 0;
+    outline-offset: 4px;
+}
+
+.third-button p {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 8px;
+    background: magenta;
+    transform: translateY(-7px);
+}
+
+.third-button:hover p {
+    transform: translateY(-6px);
+}
+
+.third-button:active p {
+    transform: translateY(-1px);
 }
