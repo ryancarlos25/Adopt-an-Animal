@@ -225,6 +225,31 @@ main {
     text-align: center;
 }
 
+.adopt-form {
+    display: flex;
+    padding: 13px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    padding: 50px;
+}
+
+.adopt-form h5{
+    font-size: 25px;
+}
+
+.adopt-form img {
+    max-width: 325px;
+    max-height: 325px;
+
+}
+
+#adopt-form-description {
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
 /* Animated Botton */
 
 button, .arrow-button, .arrow-next {
@@ -302,6 +327,15 @@ button:hover {
     transform: scale(1.1);
 }
 
+#escaleanimation2{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#escaleanimation2:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
 
 
 /* PAGE FOOTER */
