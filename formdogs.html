@@ -12,6 +12,7 @@
         <link rel="icon" type="favicon-16x16" sizes="16x16" href="favicon/favicon-16x16.png">
 
     <link rel="stylesheet" href="styles.css">
+    
 
     <title>Love Pets</title>
 
@@ -34,9 +35,76 @@
            <a id="escaleanimation" href="#socialnetworks">Social networks</a>
        </nav>
 
-       <h2>CONGRATULATIONS YOU ADOPT AN DOG!</h2>
+       <h2>CONGRATULATIONS, YOU ADOPTED AN DOG!</h2>
+        
+       <div class="register">
+         <img src="https://uploads.codesandbox.io/uploads/user/78025c1f-5a5a-4941-86af-a81c6fd87554/ir7e-menandpet.png" alt="">
+         <div id="adopt-form-description">   
+             <div>
+            <h5>We are very proud of you</h5>
+            </div>  
+
+            <div class="register">
+                <div class="inputbox">
+                    <input type="text" id="nome" required>
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" id="email"  required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+
+                    <div class="register">
+                        <div class="inputbox">
+                            <input type="text" id="cep"  required maxlength="8"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+                            <label for="cep">CEP</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" id="endereco"  required>
+                            <label for="endereco">Endereço</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" id="numero"  required>
+                            <label for="numero">Número</label>
+                        </div>
+                    </div>
+
+                    <div class="register">
+                        <div class="inputbox">
+                            <input type="text" id="bairro"  required>
+                            <label for="bairro">Bairro</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" id="cidade"  required>
+                            <label for="cidade">Cidade</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" id="estado"  required>
+                            <label for="estado">Estado</label>
+                        </div>
+                    </div>
+                    <div class="button">
+                    <button onclick="location.href='index.html'" type="button" class="third-button" id="button-register">
+                        <p>ADOPT NOW!</p>
+                     </button>
+                    </div>
 
 
+                </div>
+
+
+            </div>
+        </div>
+       </div> 
+
+       
+       
+       
+       
+       
+       
+       
        
        
        
@@ -62,6 +130,6 @@
         </span>
        </footer>
       </div>
-
+      <script src="main.js"></script>
 
 </body>
