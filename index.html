@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <title>Love Pets</title>
+    <title >Love Pets</title>
 
 </head>
 <body>
@@ -35,31 +35,37 @@
        </nav>
        
             <h2>SAVE A LIFE, GET AN ANIMAL!</h2>
-      
+            
+                <div class="slideshow-container-fade " id="fade" >
+                  
+                  <div class="Containers">
+                   <img id="escaleanimation" src="img/cat.jpeg" style="width:50%">
+                  </div>
+                
+                  <div class="Containers">
+                   <img id="escaleanimation" src="img/dog.jpg" style="width:50%">
+                  </div>
+            
+                  <div class="Containers">
+                   <img id="escaleanimation" src="img/dog2.jpeg" style="width:50%">
+                  </div>
+                </div> 
+            
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+               </div>
+              <br>
+            
+            
+                <div style="text-align:center">
+                    <span id="escaleanimation"  class="dots" onclick="currentSlide(1)"></span>
+                    <span id="escaleanimation"  class="dots" onclick="currentSlide(2)"></span>
+                    <span id="escaleanimation"  class="dots" onclick="currentSlide(3)"></span>
+                </div> 
       
             <main>
-                <section>
-                    <ul class="slider">
-                      <li>
-                       <input type="radio" id="slide1" name="slide" checked>
-                       <label id="escaleanimation2" for="slide1"></label>
-                       <img src="img/dog2.jpeg" />
-                    </li>
-                    <li>
-                        <input type="radio" id="slide2" name="slide" checked>
-                        <label id="escaleanimation2" for="slide2"></label>
-                        <img src="img/dog.jpeg" />
-                    </li>
-                     <li>
-                        <input type="radio" id="slide3" name="slide" checked>
-                        <label id="escaleanimation2" for="slide3"></label>
-                        <img src="img/cat.jpeg" />
-                     </li>
-                   </ul>
-
-        </section>
         
-        <div id="dogs"><h3>CHOOSE YOUR COMPANION!</h3></div>
+                <div id="dogs"><h3>CHOOSE YOUR COMPANION!</h3></div>
          
     <div class="row">
         <div id="escaleanimation" class="col-sm-6 col-lg-4 col-xl-3  mb-3">
@@ -259,5 +265,5 @@
         </span>
        </footer>
       </div>
-
+  <script src="main.js"></script>
 </body>
