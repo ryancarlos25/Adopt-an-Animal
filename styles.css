@@ -9,17 +9,16 @@ body, html {
     background-color: purple;
 }
 
-header{
-    
+.title {
     display: flex;
-    margin: auto;
+    margin-top: 30px;
     padding: 10px;
     background-color: #00a7e1;
     align-items: center;
     justify-content: space-between;
 }
 
-header img {
+.title img {
     width: 12%;
     height: 12%;
     max-width: 100px;
@@ -51,6 +50,11 @@ nav {
     background-color: orange;
     margin: auto;
     padding: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
     
     
 }
@@ -63,6 +67,9 @@ nav a {
     text-decoration: none;
 }
 
+header {
+    position: relative;
+}
 
 a:hover {
     color: black;
@@ -247,13 +254,14 @@ main {
     align-items: center;
     padding: 13px;
     font-family: 'Merriweather Sans', sans-serif;
-    color: #fff;
+    color: purple;
     font-weight: 700;
     padding: 50px;
 }
 
 .register h5{
     font-size: 25px;
+    color: purple;
 }
 
 .register img {
@@ -281,6 +289,7 @@ main {
     display: flex;
     flex-direction: column-reverse;
     height: 40px;
+    border-bottom: 2px solid purple;
 }
 
 input::-webkit-outer-spin-button,
@@ -315,7 +324,7 @@ input[type=number] {
     width: 100%;
     height: 3px;
     bottom: 0;
-    box-shadow: 2px solid white;
+    box-shadow: 3px solid purple;
     border: none;
     border-radius: 2px;
     transition: .5s;
@@ -350,8 +359,9 @@ input[type=number] {
 
 #adopt-form-description {
     padding: 20px;
-    border: 2px solid white;
+    border: 2px solid orange;
     border-radius: 15px;
+    background-color: white;
 }
 
 /* Animated Botton */
